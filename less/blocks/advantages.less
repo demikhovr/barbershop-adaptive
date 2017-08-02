@@ -1,0 +1,85 @@
+.advantages__wrapper {
+  .container();
+
+  min-height: 320px; /* временно для сетки */
+  padding-top: 30px;
+}
+
+.advantages__items {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantages__item {
+  min-height: 145px; /* временно для сетки */
+  margin-bottom: 23px;
+  padding: 0 44px;
+  padding-top: 125px;
+  background-color: green;
+}
+
+.advantages__item:nth-child(n+2) {
+  display: none;
+}
+
+@media @tablet-widths {
+  .advantages__wrapper {
+    padding-top: 42px;
+  }
+
+  .advantages__items {
+    padding-bottom: 4px;
+  }
+
+  .advantages__item {
+    min-height: 95px; /*временно для сетки */
+    margin: 0 30px;
+    margin-bottom: 40px;
+    padding: 0;
+    padding-bottom: 39px;
+    padding-left: 128px;
+  }
+
+  .advantages__item:nth-child(n+2) {
+    display: block;
+  }
+
+  .advantages__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media @desktop-widths {
+
+  .advantages__wrapper {
+    min-height: 275px; /* временно для сетки */
+    padding-top: 75px;
+    padding-bottom: 59px;
+  }
+
+  .advantages__items {
+    display: table;
+    width: 100%;
+    height: 275px; /* временно для сетки, так как таблица не реагирует на min-height, задаем height */
+  }
+
+  .advantages__item {
+    display: table-cell;
+    width: 240px;
+    magin: 0;
+    padding: 0 40px;
+    padding-top: 130px;
+  }
+
+  .advantages__item:nth-child(n+2) {
+    display: table-cell;
+  }
+
+  .advantages__item:nth-child(2) {
+    width: 200px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
