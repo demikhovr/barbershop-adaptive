@@ -1,32 +1,68 @@
 .page-footer__wrapper {
   position: relative;
-  min-height: 490px; /* временно для сетки */
-  padding-top: 30px;
-  padding-bottom: 24px;
 
-  .container();
+  padding-top: 70px;
+  padding-bottom: 23px;
+
+  .container-fluid();
 }
 
 .page-footer__contacts {
-  min-height: 185px;
-  margin: 0;
   margin: 0 20px;
   margin-bottom: 25px;
 
-  background-color: rgba(155, 55, 55, 0.5);
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.page-footer__contacts b {
+  display: block;
+  margin-bottom: 12px;
+
+  color: #ffffff;
+}
+
+.page-footer__contacts br {
+  display: none;
+}
+
+.page-footer__contacts a {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 26px;
+  padding: 14px 75px 13px 75px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  border: 1px solid #3f3f3f;
+  outline: none;
+
+  transition: border-color 0.2s linear, background-color 0.2s linear, color 0.3s linear;
+  &:hover,
+  &:focus {
+    border-color: #545454;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #252525;
+    border-color: #252525;
+  }
 }
 
 .page-footer__social {
-  min-height: 100px;
   margin: 0;
   margin-bottom: 30px;
-
-  background-color: rgba(35, 55, 255, 0.5);
 }
+
+
 
 .page-footer__copyright {
   min-height: 185px;
   margin: 0 20px;
+
   background-color: rgba(35, 155, 55, 0.5);
 }
 
@@ -50,7 +86,8 @@
   .page-footer__copyright {
     position: absolute;
     top: 50px;
-    right: 0px;
+    right: 0;
+
     width: 160px;
     margin: 0;
   }
@@ -58,19 +95,19 @@
 
 @media @desktop-widths {
   .page-footer__wrapper {
-
-    .clearfix();
     min-height: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
+
+    .clearfix();
   }
 
   .page-footer__contacts {
     float: left;
     width: 320px;
+    min-height: 100px;
     margin: 0;
     margin-right: 80px;
-    min-height: 100px;
   }
 
   .page-footer__social {
@@ -81,9 +118,10 @@
   }
 
   .page-footer__copyright {
+    position: static;
+
     float: left;
     width: 160px;
-    position: static;
     min-height: 100px;
   }
 }
