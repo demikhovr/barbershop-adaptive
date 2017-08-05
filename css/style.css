@@ -1363,6 +1363,7 @@ img {
 .page-footer__contacts a:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #252525;
+  border-color: #252525;
 }
 .page-footer__social {
   margin: 0;
@@ -1652,9 +1653,9 @@ table {
   height: 101px;
   font-size: 0;
   background-repeat: no-repeat;
-  outline: none;
   background-position: center;
   border: 1px solid #3e3e3e;
+  outline: none;
   transition: border-color 0.3s linear, background-color 0.3s linear, opacity 0.3s linear;
 }
 .social-link--vk {
