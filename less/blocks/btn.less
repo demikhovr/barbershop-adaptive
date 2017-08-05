@@ -1,0 +1,22 @@
+.btn {
+  box-sizing: border-box;
+
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: 1px solid #e5ddd5;
+
+  transition: border 0.1s linear, background-color 0.2s linear, color 0.2s linear;
+  &:hover,
+  &:focus {
+    border-color: #d5c9bd;
+  }
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    background-color: #d5c9bd;
+  }
+}

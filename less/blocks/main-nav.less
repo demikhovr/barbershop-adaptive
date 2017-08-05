@@ -23,7 +23,10 @@
   border: none;
   outline: none;
   cursor: pointer;
-  &:hover {
+
+  transition: background-color 0.2s linear;
+  &:hover,
+  &:focus {
     background-color: #624530;
   }
   &:active {
@@ -106,10 +109,14 @@
   background-color: #826550;
   border-top: 1px solid #886e5b;
   border-bottom: 1px solid #71543f;
+  outline: none;
+
+  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear;
 }
 
 .main-nav__item a[href] {
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #755a46;
     border-top-color: #755a46;
   }
@@ -131,6 +138,14 @@
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
+
+  outline: none;
+
+  transition: background-color 0.2s linear;
+  &:hover,
+  &:focus {
+    background-color: #755a46;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -249,7 +264,9 @@
   }
 
   .main-nav__item {
-    margin-right: 32px;
+    &:last-child {
+      margin-right: 32px;
+    }
     &--active {
       position: relative;
       &::after {
