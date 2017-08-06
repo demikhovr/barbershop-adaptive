@@ -153,9 +153,10 @@
         <p class="page-footer__contacts">
           <b>Барбершоп «Бородинский»</b><br>
           г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
-          <a href="tel:+78125556666"><span class="visually-hidden">Тел.:</span> +7 (812) 555-66-66</a>
+          <a class="btn" href="tel:+78125556666"><span class="page-footer__phone-show">Тел.:</span> +7 (812) 555-66-66</a>
         </p>
         <p class="page-footer__social">
+          <span class="page-footer__social-title">Давайте дружить!</span>
           <span class="social-links">
             <a class="social-link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
             <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
@@ -164,13 +165,38 @@
         </p>
         <p class="page-footer__copyright">
           Разработано:
-          <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="btn" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </p>
       </div>
     </footer>
+    <section class="modal-login">
+      <h2 class="modal-login__title">Личный кабинет</h2>
+      <p>Введите свой логин и пароль, чтобы войти</p>
+      <form class="modal-login__form" action="#" method="POST">
+        <label for="login">
+          <input type="text" id="login" placeholder="Логин">
+        </label>
+        <label for="password">
+          <input type="text" id="password" placeholder="Пароль">
+        </label>
+        <input type="checkbox" name="remember" id="remember">
+        <label for="remember"><span></span>Запомнить меня</label>
+        <a href="#">Я забыл пароль!</a>
+        <button type="submit">Войти</button>
+        <button class="modal-login__close  btn" type="button">Закрыть</button>
+      </form>
+
+    </section>
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
+      var link = document.querySelector('.main-nav__user-login');
+      var popup = document.querySelector(".modal-login");
+      var close = popup.querySelector(".modal-login__close");
+      var form = popup.querySelector("form");
+      var login = popup.querySelector("[name=login]");
+      var password = popup.querySelector("[name=password]");
+      var storage = localStorage.getItem("login")
 
       navMain.classList.remove('main-nav--nojs');
 
@@ -183,6 +209,16 @@
           navMain.classList.remove('main-nav--opened');
         }
       });
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-login--show");
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-login--show");
+       });
     </script>
   </body>
 </html>
