@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Барбершоп «Бородинский»</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="visually-hidden">Барбершоп «Бородинский» - истинно мужская классика</h1>
+      <div class="page-header__logo  page-header__logo--form-page">
+        <img src="img/logotype-mobile.svg" width="370" height="153" alt="Барбершоп «Бородинский»">
+      </div>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="#">Наши работы</a></li>
+            <li class="main-nav__item  main-nav__item--active"><a>Записаться</a></li>
+            <li class="main-nav__item"><a href="#">Контакты</a></li>
+            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+          </ul>
+          <ul class="main-nav__user-items">
+            <li class="main-nav__user-item"><a class="main-nav__user-login" href="#" title="Войти">Вход</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="form">
+      <div class="form__wrapper">
+        <h2 class="form__title">Запись на стрижку</h2>
+        <a class="btn  form__return  form__return--show" href="index.html">На главную</a>
+        <form class="form__inner" action="#" method="POST">
+          <div class="form__field  form__field--fullname">
+            <h3 class="form__field-title">Ваше ФИО:</h3>
+            <label for="surname"><input type="text" id="name" name="name" placeholder="Фамилия"></label>
+            <label for="name"><input type="text" id="surname" name="surname" placeholder="Имя"></label>
+            <label for="patronymic"><input type="text" name="patronymic" placeholder="Отчество"></label>
+          </div>
+          <div class="form__field  form__field--contacts">
+            <h3 class="form__field-title">Ваши контакты:</h3>
+            <label for="phone"><input type="text" name="phone" placeholder="Контактный телефон"></label>
+            <label for="email"><input type="email" name="email" placeholder="Контактный e-mail"></label>
+          </div>
+          <div class="form__field  form__field--comment">
+            <h3 class="form__field-title">Оставьте комментарий для мастера:</h3>
+            <textarea name="comment" placeholder="Доп. информация для мастера"></textarea>
+          </div>
+          <div class="form__field  form__field--beard">
+            <h3 class="form__field-title">Выберите модель для бороды:</h3>
+            <ul>
+              <li>
+                <input type="radio" id="beard-1" name="beard" value="beard-1" checked>
+                <label for="beard-1">адмирал</label>
+                <img src="img/beard-1.svg" alt="Тип бороды">
+              </li>
+              <li>
+                <input type="radio" id="beard-2" name="beard" value="beard-2">
+                <label for="beard-2">лесоруб</label>
+                <img src="img/beard-2.svg" alt="Тип бороды">
+              </li>
+              <li>
+                <input type="radio" id="beard-3" name="beard" value="beard-3">
+                <label for="beard-3">полярник</label>
+                <img src="img/beard-3.svg" alt="Тип бороды">
+              </li>
+              <li>
+                <input type="radio" id="beard-4" name="beard" value="beard-4">
+                <label for="beard-4">боярин</label>
+                <img src="img/beard-4.svg" alt="Тип бороды">
+              </li>
+              <li>
+                <input type="radio" id="beard-5" name="beard" value="beard-5">
+                <label for="beard-5">мудрец</label>
+                <img src="img/beard-5.svg" alt="Тип бороды">
+              </li>
+            </ul>
+          </div>
+          <div class="form__field  form__field--offers">
+            <h3 class="form__field-title">Дополнительные услуги:</h3>
+            <ul>
+              <li>
+                <input type="checkbox" id="offer-1" name="offer-1" checked>
+                <label for="offer-1">Подкрасить бороду</label>
+              </li>
+              <li>
+                <input type="checkbox" id="offer-2" name="offer-2" checked>
+                <label for="offer-2">Накрутить усы</label>
+              </li>
+              <li>
+                <input type="checkbox" id="offer-3" name="offer-3">
+                <label for="offer-3">Причесать бороду</label>
+              </li>
+              <li>
+                <input type="checkbox" id="offer-4" name="offer-4">
+                <label for="offer-4">Подровнять виски</label>
+              </li>
+              <li>
+                <input type="checkbox" id="offer-5" name="offer-5">
+                <label for="offer-5">Убрать седину</label>
+              </li>
+              <li>
+                <input type="checkbox" id="offer-6" name="offer-6">
+                <label for="offer-6">Отполировать лысину</label>
+              </li>
+            </ul>
+          </div>
+          <button type="submit">Отправить заявку</button>
+        </form>
+      </section>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <p class="page-footer__contacts">
+            <b>Барбершоп «Бородинский»</b><br>
+            г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+            <a class="btn" href="tel:+78125556666"><span class="page-footer__phone-show">Тел.:</span> +7 (812) 555-66-66</a>
+          </p>
+          <p class="page-footer__social">
+            <span class="page-footer__social-title">Давайте дружить!</span>
+            <span class="social-links">
+              <a class="social-link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social-link  social-link--ig" href="https://instagram.com/htmlacademy">Мы в Инстаграме</a>
+            </span>
+          </p>
+          <p class="page-footer__copyright">
+            Разработано:
+            <a class="btn" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </p>
+        </div>
+      </footer>
+      <section class="modal-login">
+        <h2 class="modal-login__title">Личный кабинет</h2>
+        <p>Введите свой логин и пароль, чтобы войти</p>
+        <form class="modal-login__form" action="#" method="POST">
+          <label for="login">
+            <input type="text" id="login" placeholder="Логин">
+          </label>
+          <label for="password">
+            <input type="text" id="password" placeholder="Пароль">
+          </label>
+          <input type="checkbox" name="remember" id="remember">
+          <label for="remember"><span></span>Запомнить меня</label>
+          <a href="#">Я забыл пароль!</a>
+          <button type="submit">Войти</button>
+          <button class="modal-login__close  btn" type="button">Закрыть</button>
+        </form>
+      </div>
+    </section>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      var link = document.querySelector('.main-nav__user-login');
+      var popup = document.querySelector(".modal-login");
+      var close = popup.querySelector(".modal-login__close");
+      var form = popup.querySelector("form");
+      var login = popup.querySelector("[name=login]");
+      var password = popup.querySelector("[name=password]");
+      var storage = localStorage.getItem("login")
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-login--show");
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-login--show");
+       });
+    </script>
+  </body>
