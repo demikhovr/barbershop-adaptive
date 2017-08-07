@@ -50,7 +50,7 @@
             <textarea name="comment" placeholder="Доп. информация для мастера"></textarea>
           </div>
           <div class="form__field  form__field--beard">
-            <h3 class="form__field-title">Выберите модель для бороды:</h3>
+            <h3 class="form__field-title">Выберите модель бороды:</h3>
             <ul>
               <li>
                 <input type="radio" id="beard-1" name="beard" value="beard-1" checked>
@@ -108,13 +108,13 @@
               </li>
             </ul>
           </div>
-          <button type="submit">Отправить заявку</button>
+          <button class="form__apply" type="button">Отправить заявку</button>
         </form>
       </section>
       <footer class="page-footer">
         <div class="page-footer__wrapper">
           <p class="page-footer__contacts">
-            <b>Барбершоп «Бородинский»</b><br>
+            <b>Барбершоп Бородинский</b><br>
             г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
             <a class="btn" href="tel:+78125556666"><span class="page-footer__phone-show">Тел.:</span> +7 (812) 555-66-66</a>
           </p>
@@ -145,21 +145,32 @@
           <input type="checkbox" name="remember" id="remember">
           <label for="remember"><span></span>Запомнить меня</label>
           <a href="#">Я забыл пароль!</a>
-          <button type="submit">Войти</button>
+          <button class="modal-login__enter" type="submit">Войти</button>
           <button class="modal-login__close  btn" type="button">Закрыть</button>
         </form>
       </div>
+    </section>
+    <section class="modal-failure">
+      <h2 class="modal-failure__title">Неудача</h2>
+      <p>Что-то пошло не так. Проверьте выделенные красным поля формы</p>
+      <button class="modal-failure__close  btn">Ок</button>
+    </section>
+    <section class="modal-success">
+      <h2 class="modal-success__title">Это успех!</h2>
+      <p>Ваша заявка отправлена.<br>Ожидайте, мы свяжемся с вами как только будет минутка.</p>
+      <button class="modal-success__close  btn">Закрыть окно</button>
     </section>
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
       var link = document.querySelector('.main-nav__user-login');
-      var popup = document.querySelector(".modal-login");
-      var close = popup.querySelector(".modal-login__close");
-      var form = popup.querySelector("form");
-      var login = popup.querySelector("[name=login]");
-      var password = popup.querySelector("[name=password]");
-      var storage = localStorage.getItem("login")
+      var popup = document.querySelector('.modal-login');
+      var application = document.querySelector('.form__apply');
+      var modalSuccess = document.querySelector('.modal-success');
+      var modalFailure = document.querySelector('.modal-failure');
+      var modalLoginClose = document.querySelector('.modal-login__close');
+      var modalSuccessClose = document.querySelector('.modal-success__close');
+      var modalFailureClose = document.querySelector('.modal-failure__close');
 
       navMain.classList.remove('main-nav--nojs');
 
@@ -173,14 +184,35 @@
         }
       });
 
-      link.addEventListener("click", function(event) {
+      link.addEventListener('click', function(event) {
         event.preventDefault();
-        popup.classList.add("modal-login--show");
+        popup.classList.add('modal-login--show');
       });
 
-      close.addEventListener("click", function(event) {
+      modalLoginClose.addEventListener('click', function(event) {
         event.preventDefault();
-        popup.classList.remove("modal-login--show");
+        popup.classList.remove('modal-login--show');
        });
+
+      // application.addEventListener('click', function(event) {
+      //   event.preventDefault();
+      //   modalFailure.classList.add('modal-failure--show');
+      // });
+
+      // modalFailureClose.addEventListener('click', function(event) {
+      //   event.preventDefault();
+      //   modalFailure.classList.remove('modal-failure--show');
+      // });
+
+      application.addEventListener('click', function(event) {
+        event.preventDefault();
+        modalSuccess.classList.add('modal-success--show');
+      });
+
+      modalSuccessClose.addEventListener('click', function(event) {
+        event.preventDefault();
+        modalSuccess.classList.remove('modal-success--show');
+      });
+
     </script>
   </body>
