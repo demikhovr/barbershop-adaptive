@@ -2662,7 +2662,7 @@ table {
     width: 33%;
   }
 }
-@keyframes bounce {
+@keyframes bounce-failure {
   0% {
     transform: translate(-50%, -1000%);
   }
@@ -2689,7 +2689,7 @@ table {
   background-color: #ffffff;
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.75));
-  animation: bounce 0.6s;
+  animation: bounce-failure 0.6s;
 }
 .modal-failure--show {
   display: block;
@@ -2730,7 +2730,7 @@ table {
 .modal-failure__close:active {
   color: rgba(255, 255, 255, 0.3);
 }
-@keyframes bounce {
+@keyframes bounce-success {
   0% {
     transform: translate(-50%, -1000%);
   }
@@ -2757,7 +2757,7 @@ table {
   background-color: #ffffff;
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.75));
-  animation: bounce 0.6s;
+  animation: bounce-success 0.6s;
 }
 .modal-success--show {
   display: block;
