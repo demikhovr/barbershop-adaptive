@@ -133,7 +133,7 @@
 
   .advantages__wrapper {
     padding-top: 42px;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
   }
 
   .advantages__items {
@@ -141,8 +141,7 @@
   }
 
   .advantages__item {
-    margin: 0 30px;
-    margin-bottom: 60px;
+    margin: 0 25px 60px 31px;
     padding: 0;
     padding-right: 5px;
     padding-bottom: 18px;
@@ -182,6 +181,10 @@
     margin-bottom: 0;
   }
 
+  .advantages__item-title {
+    margin-bottom: 14px;
+  }
+
   .advantages__toggles {
     display: none !important;
   }
@@ -209,7 +212,7 @@
 
   .advantages__item {
     display: block;
-    width: 33%;
+    width: 33.3%;
     margin: 0;
     padding: 0 40px;
     padding-top: 125px;
@@ -217,6 +220,11 @@
     text-align: center;
 
     border-right: 1px solid #4a4a4a;
+    &:nth-child(2) {
+      width: 33.3%;
+      padding-right: 61px;
+      padding-left: 61px;
+    }
     &:last-child {
       border-right: none;
     }
@@ -232,9 +240,5 @@
 
   .advantages__item:nth-child(n+2) {
     display: block;
-  }
-
-  .advantages__item:nth-child(2) {
-    width: 33%;
   }
 }

@@ -12,7 +12,6 @@
 .container() {
   width: 320px;
   margin: 0 auto;
-
   @media @tablet-widths {
     width: 640px;
   }
@@ -23,9 +22,8 @@
 
 .container-fluid() {
   width: auto;
-
   @media @tablet-widths {
-    width: 84%;  /* 640px / 768px ~= 84% */
+    width: 81%;  /* 640px / 768px ~= 84% */
     max-width: 1200px; /* 960px / 0.84 ~= 1142px (центровка начнется чуть раньше 1200px*/
     margin: 0 auto;
   }

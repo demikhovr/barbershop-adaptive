@@ -90,14 +90,18 @@
 .stats__value {
   padding-right: 0;
 
+  font-weight: bold;
   font-size: 40px;
   line-height: 40px;
 }
 
 .stats__value sup {
-  top: -0.35em;
+  top: -0.6em;
 
-  margin-left: 5px;
+  margin-left: 7px;
+
+  font-weight: normal;
+  font-size: 60%;
 }
 
 .stats__field {
@@ -113,7 +117,7 @@
     position: relative;
     z-index: 1;
 
-    margin-top: -184px;
+    margin-top: -185px;
   }
 
   .stats__header {
@@ -122,8 +126,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 31px 40px;
-    padding-bottom: 24px;
+    padding: 31px 41px;
+    padding-bottom: 32px;
     &::before {
       content: "";
       position: absolute;
@@ -138,7 +142,7 @@
 
   .stats__slogan {
     width: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 
     font-size: 40px;
     line-height: 40px;
@@ -150,7 +154,7 @@
     width: 37.5%;
     padding: 0;
     padding-top: 4px;
-    padding-left: 30px;
+    padding-left: 34px;
 
     text-align: left;
   }
@@ -195,6 +199,15 @@
 
     font-size: 72px;
     line-height: 72px;
+  }
+
+  .stats__value sup {
+    top: -0.45em;
+
+    margin-left: 14px;
+
+    font-weight: normal;
+    font-size: 65%;
   }
 
   .stats__field {

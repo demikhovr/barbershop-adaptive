@@ -11,14 +11,18 @@
     <header class="page-header">
       <h1 class="visually-hidden">Барбершоп «Бородинский» - истинно мужская классика</h1>
       <div class="page-header__logo">
-        <img src="img/logotype-mobile.svg" width="370" height="153" alt="Барбершоп «Бородинский»">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img src="img/logotype-mobile.svg" width="370" height="153" alt="Барбершоп «Бородинский»">
+        </picture>
       </div>
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
             <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="#">Наши работы</a></li>
+            <li class="main-nav__item"><a href="photo.html">Наши работы</a></li>
             <li class="main-nav__item"><a href="form.html">Записаться</a></li>
             <li class="main-nav__item"><a href="#">Контакты</a></li>
             <li class="main-nav__item"><a href="#">HTML Academy</a></li>
@@ -34,7 +38,7 @@
         <h2 class="stats__title  visually-hidden">Статистика Барбершопа</h2>
         <b class="stats__slogan">Стрижка у нас<br> это выгодно!</b>
         <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-        <small class="stats__legend  stats__legend--top"><sup>*</sup> - приведённые данные ложь</small>
+        <small class="stats__legend  stats__legend--top"><sup>*</sup> — приведённые данные ложь</small>
       </header>
       <table class="stats__items">
         <tr>
@@ -65,7 +69,7 @@
         <ul class="advantages__items">
           <li class="advantages__item  advantages__item--fast  slider__item">
             <h3 class="advantages__item-title">Быстро</h3>
-            <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы – счастливый обладатель стильной стрижки-минутки</p>
+            <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки</p>
           </li>
           <li class="advantages__item  advantages__item--cool  slider__item">
             <h3 class="advantages__item-title">Круто</h3>
@@ -73,7 +77,7 @@
           </li>
           <li class="advantages__item  advantages__item--expensive  slider__item">
             <h3 class="advantages__item-title">Дорого</h3>
-            <p>Наши мастера - профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не дает определённый статус?</p>
+            <p>Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не дает определённый статус?</p>
           </li>
         </ul>
         <div class="advantages__toggles  slider__toggles">
