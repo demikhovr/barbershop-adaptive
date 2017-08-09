@@ -150,16 +150,18 @@
   margin-right: 20px;
   margin-left: 20px;
   padding: 13px 45px 13px 45px;
-  outline: none;
+
   font-size: 18px;
   line-height: 24px;
+
+  outline: none;
 }
 
 @media @tablet-widths {
   .news__wrapper {
     position: relative;
 
-    padding-top: 88px;
+    padding-top: 91px;
     padding-bottom: 10px;
   }
 
@@ -187,9 +189,18 @@
     border-bottom: none;
   }
 
+  .news__date {
+    margin-top: 10px;
+    padding-left: 13px;
+  }
+
+  .news__date b {
+    margin-bottom: -4px;
+  }
+
   .news__to-all {
     position: absolute;
-    top: 80px;
+    top: 82px;
     right: 0;
 
     width: 159px;
@@ -201,8 +212,8 @@
 
 @media @desktop-widths {
   .news__wrapper {
-    padding-top: 120px;
-    padding-bottom: 40px;
+    padding-top: 126px;
+    padding-bottom: 13px;
   }
 
   .news__title {
@@ -222,10 +233,11 @@
     }
     &:nth-child(n+3) {
       display: flex;
+      padding-right: 45px;
     }
   }
 
   .news__to-all {
-    top: 120px;
+    top: 118px;
   }
 }

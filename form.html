@@ -10,15 +10,19 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Барбершоп «Бородинский» - истинно мужская классика</h1>
-      <div class="page-header__logo  page-header__logo--form-page">
-        <img src="img/logotype-mobile.svg" width="370" height="153" alt="Барбершоп «Бородинский»">
+      <div class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img src="img/logotype-mobile.svg" width="370" height="153" alt="Барбершоп «Бородинский»">
+        </picture>
       </div>
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
             <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="#">Наши работы</a></li>
+            <li class="main-nav__item"><a href="photo.html">Наши работы</a></li>
             <li class="main-nav__item  main-nav__item--active"><a>Записаться</a></li>
             <li class="main-nav__item"><a href="#">Контакты</a></li>
             <li class="main-nav__item"><a href="#">HTML Academy</a></li>
@@ -36,9 +40,9 @@
         <form class="form__inner" action="#" method="POST">
           <div class="form__field  form__field--fullname">
             <h3 class="form__field-title">Ваше ФИО:</h3>
-            <label for="surname"><input type="text" id="name" name="name" placeholder="Фамилия"></label>
-            <label for="name"><input type="text" id="surname" name="surname" placeholder="Имя"></label>
-            <label for="patronymic"><input type="text" name="patronymic" placeholder="Отчество"></label>
+            <label for="surname"><span class="visually-hidden">Фамилия</span><input type="text" id="name" name="name" placeholder="Фамилия"></label>
+            <label for="name"><span class="visually-hidden">Имя</span><input type="text" id="surname" name="surname" placeholder="Имя"></label>
+            <label for="patronymic"><span class="visually-hidden">Отчество</span><input type="text" name="patronymic" placeholder="Отчество"></label>
           </div>
           <div class="form__field  form__field--contacts">
             <h3 class="form__field-title">Ваши контакты:</h3>

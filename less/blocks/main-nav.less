@@ -235,7 +235,6 @@
 @media @tablet-widths {
   .main-nav {
     width: auto;
-    min-height: 70px;
     margin: 0;
 
     background-color: #000000;
@@ -265,7 +264,7 @@
 
   .main-nav__item {
     &:last-child {
-      margin-right: 32px;
+      margin-right: 20px;
     }
     &--active {
       position: relative;
@@ -330,6 +329,9 @@
 @media @desktop-widths {
   .main-nav__item {
     margin-right: 0;
+    &:last-child {
+      margin-right: 95px;
+    }
     &--active::after {
       right: 30px;
       left: 30px;
