@@ -34,7 +34,7 @@
     }
   }
 
-  .page-header__logo--form-page {
+  .page-header__logo--inner-page {
     height: 214px;
 
     background-image: url("../img/bg-tablet-inner.jpg");
@@ -51,6 +51,10 @@
 
     transform: translateX(-50%);
   }
+
+  .page-header__logo--inner-page img {
+    bottom: 73px;
+  }
 }
 
 @media @desktop-widths {
@@ -66,11 +70,15 @@
     background-size: cover;
   }
 
-  .page-header__logo--form-page {
+  .page-header__logo--inner-page {
     height: 308px;
   }
 
   .page-header__logo img {
     bottom: 438px;
+  }
+
+  .page-header__logo--inner-page img {
+    bottom: 99px;
   }
 }

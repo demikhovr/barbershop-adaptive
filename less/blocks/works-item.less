@@ -1,0 +1,241 @@
+.works-item {
+  margin-bottom: 20px;
+}
+
+.works-item__img-wrapper {
+  position: relative;
+
+  height: 176px;
+  overflow: hidden;
+
+  line-height: 0;
+  text-align: center;
+
+  background-color: #e6ded6;
+}
+
+.works-item--work-of-month .works-item__img-wrapper {
+  position: relative;
+
+  height: 480px;
+  &::before {
+    content: "Работа месяца";
+    position: absolute;
+    bottom: 29px;
+    left: 0;
+    z-index: 2;
+
+    box-sizing: border-box;
+    width: 168px;
+    padding: 15px 15px 15px 25px;
+
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #826550;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 29px;
+    left: 168px;
+    z-index: 2;
+
+    width: 0;
+    height: 0;
+
+    border: 25px solid #826550;
+    border-right: 8px solid transparent;
+    border-left: none;
+  }
+}
+
+.works-item__review {
+  padding: 20px 22px 22px;
+
+  border: 1px solid #e5ddd5;
+  border-top: none;
+}
+
+.works-item__title {
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.works-item__blockquote {
+  margin: 0;
+  margin-bottom: 15px;
+
+  color: #000000;
+}
+
+.works-item__parameter-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.works-item__parameter-item {
+  position: relative;
+
+  width: auto;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding-left: 36px;
+
+  font-size: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 45px;
+    height: 21px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translate(-30%, -50%);
+  }
+}
+
+.works-item__parameter-item--haircut::before {
+  background-image: url("../img/scissors-icon.svg");
+}
+
+.works-item__parameter-item--shaving::before {
+  background-image: url("../img/beard-icon.svg");
+}
+
+.works-item__parameter-item--mustache::before {
+  background-image: url("../img/mustache-icon.svg");
+}
+
+@media @tablet-widths {
+  .works-item {
+    display: flex;
+    margin-bottom: 41px;
+  }
+
+  .works-item__img-wrapper,
+  .works-item--work-of-month .works-item__img-wrapper {
+    height: auto;
+  }
+
+  .works-item--work-of-month .works-item__img-wrapper {
+    position: relative;
+
+    width: 270px;
+    &::before {
+      top: 35px;
+      bottom: auto;
+    }
+    &::after {
+      top: 35px;
+      bottom: auto;
+    }
+  }
+
+  .works-item__img {
+    position: relative;
+    z-index: 1;
+  }
+
+  .works-item__review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: ~"calc(100% - 370px)";
+    padding: 43px 50px 20px;
+
+    border-top: 1px solid  #e5ddd5;
+    border-left: none;
+  }
+  .works-item__title {
+    margin-bottom: 26px;
+  }
+}
+
+@media @desktop-widths {
+  .works-item {
+    margin-bottom: 41px;
+  }
+
+  .works-item:first-child .works-item__img-wrapper {
+    width: 480px;
+  }
+
+  .works-item:first-child .works-item__review {
+    width: 396px;
+    padding: 128px 42px 12px;
+  }
+
+  .works-item:first-child .works-item__parameter-item {
+    margin-bottom: 15px;
+  }
+
+  .works-item--work-of-month .works-item__img-wrapper {
+    &::before {
+      top: 25px;
+      right: 0;
+      bottom: auto;
+      left: auto;
+    }
+    &::after {
+      top: 25px;
+      right: 168px;
+      bottom: auto;
+      left: auto;
+
+      transform: rotate(180deg);
+    }
+  }
+
+  .works-item:not(:first-child) {
+    flex-direction: column;
+    width: 293px;
+  }
+
+  .works-item:nth-child(3n + 1) {
+    margin-right: 0;
+  }
+
+  .works-item__img-wrapper {
+    width: auto;
+  }
+
+  .works-item__review {
+    flex-grow: 1;
+    width: auto;
+  }
+
+  .works-item:not(:first-child) .works-item__review {
+    padding: 30px 35px 10px;
+
+    border-top: none;
+    border-left: 1px solid  #e5ddd5;
+  }
+
+  .works-item__blockquote {
+    margin-bottom: 25px;
+  }
+
+  .works-item__parameter-item {
+    width: auto;
+    margin-right: 30px;
+    margin-bottom: 21px;
+  }
+}

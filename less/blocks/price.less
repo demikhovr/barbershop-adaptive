@@ -1,18 +1,29 @@
-@screen_md: 700px;
-@screen_lg: 1040px;
-
-table {
-  border-collapse: collapse;
-}
-
 .price {
-  margin: 50px 0;
-  padding: 40px 20px;
-
-  color: #ffffff;
+  position: relative;
 
   background-color: #353535;
-  box-shadow: 0 0 5px  #666666;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -35px;
+    left: 0;
+
+    height: 35px;
+
+    background-image: url("../img/corner-photo.svg");
+    transform: rotate(180deg);
+  }
+}
+
+.price__wrapper {
+  padding: 65px 20px 19px;
+
+  .container-fluid();
+}
+
+.price__table {
+  border-collapse: collapse;
 }
 
 .price__header {
@@ -82,15 +93,19 @@ table {
   width: 57px;
   height: 57px;
 
-  border: 2px solid white;
-  border-radius: 50%;
+  background-image: url("../img/clock illustration.svg");
   transform: translateY(-50%);
 }
 
-@media (min-width: @screen_md) {
-  .price__inner {
-    width: 640px;
-    margin: auto;
+@media @tablet-widths {
+  .price {
+    &::after {
+      display: none;
+    }
+  }
+
+  .price__wrapper {
+    padding: 75px 0 50px;
   }
 
   .price__header {
@@ -139,7 +154,8 @@ table {
   }
 
   .price__discount {
-    height: 120px;
+    min-height: 120px;
+    margin: 0;
     margin-top: 30px;
     padding: 45px 10px;
     padding-left: 105px;
@@ -159,9 +175,9 @@ table {
   }
 }
 
-@media (min-width: @screen_lg) {
-  .price__inner {
-    width: 960px;
+@media @desktop-widths {
+  .price__wrapper {
+    padding: 70px 0 80px;
   }
 
   .price__header {

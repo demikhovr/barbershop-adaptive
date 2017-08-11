@@ -9,7 +9,7 @@
 <body>
   <header class="page-header">
     <h1 class="visually-hidden">Барбершоп «Бородинский» - истинно мужская классика</h1>
-    <div class="page-header__logo">
+    <div class="page-header__logo  page-header__logo--inner-page">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
@@ -33,129 +33,134 @@
     </nav>
   </header>
   <section class="works">
-    <h2 class="visually-hidden">Наши работы</h2>
-    <ul class="works__list">
-      <li class="works-item  works-item--work-of-month">
-        <div class="works-item__img-wrapper">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-            <img class="works-item__img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Пример нашей работы">
-          </picture>
-        </div>
-        <div class="works-item__review">
-          <div class="works-item__review-text">
-            <h3 class="works-item__title">Лжепётр Мчиславский</h3>
-            <blockquote class="works-item__blockquote">
-              Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!
-            </blockquote>
+    <div class="works__wrapper">
+      <h2 class="works__title">Наши работы</h2>
+      <a class="btn  works__return  works__return--show" href="index.html">На главную</a>
+      <ul class="works__list">
+        <li class="works-item  works-item--work-of-month">
+          <div class="works-item__img-wrapper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img class="works-item__img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Пример нашей работы">
+            </picture>
           </div>
-          <ul class="works-item__parameter-list">
-            <li class="works-item__parameter-item  works-item__parameter-item--haircut">Стрижка</li>
-            <li class="works-item__parameter-item  works-item__parameter-item--shaving">Бритьё</li>
-            <li class="works-item__parameter-item  works-item__parameter-item--mustache">Усы</li>
-          </ul>
-        </div>
-      </li>
-      <li class="works-item">
-        <div class="works-item__img-wrapper">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-            <img class="works-item__img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Пример нашей работы">
-          </picture>
-        </div>
-        <div class="works-item__review">
-          <div class="works-item__review-text">
-            <h3 class="works-item__title">Саша Мальцев</h3>
-            <blockquote class="works-item__blockquote">
-              Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?
-            </blockquote>
+          <div class="works-item__review">
+            <div class="works-item__review-text">
+              <h3 class="works-item__title">Лжепётр Мчиславский</h3>
+              <blockquote class="works-item__blockquote">
+                Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!
+              </blockquote>
+            </div>
+            <ul class="works-item__parameter-list">
+              <li class="works-item__parameter-item  works-item__parameter-item--haircut">Стрижка</li>
+              <li class="works-item__parameter-item  works-item__parameter-item--shaving">Бритьё</li>
+              <li class="works-item__parameter-item  works-item__parameter-item--mustache">Усы</li>
+            </ul>
           </div>
-          <ul class="works-item__parameter-list">
-            <li class="works-item__parameter-item  works-item__parameter-item--haircut">Стрижка</li>
-          </ul>
-        </div>
-      </li>
-      <li class="works-item">
-        <div class="works-item__img-wrapper">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-            <img class="works-item__img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Пример нашей работы">
-          </picture>
-        </div>
-        <div class="works-item__review">
-          <div class="works-item__review-text">
-            <h3 class="works-item__title">Владимир Иваныч</h3>
-            <blockquote class="works-item__blockquote">
-              К зимнему сезону — готов!
-            </blockquote>
+        </li>
+        <li class="works-item">
+          <div class="works-item__img-wrapper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img class="works-item__img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Пример нашей работы">
+            </picture>
           </div>
-          <ul class="works-item__parameter-list">
-            <li class="works-item__parameter-item  works-item__parameter-item--shaving">Борода</li>
-            <li class="works-item__parameter-item  works-item__parameter-item--mustache">Усы</li>
-          </ul>
-        </div>
-      </li>
-      <li class="works-item">
-        <div class="works-item__img-wrapper">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-            <img class="works-item__img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Пример нашей работы">
-          </picture>
-        </div>
-        <div class="works-item__review">
-          <div class="works-item__review-text">
-            <h3 class="works-item__title">Винстон Синий</h3>
-            <blockquote class="works-item__blockquote">
-              Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!
-            </blockquote>
+          <div class="works-item__review">
+            <div class="works-item__review-text">
+              <h3 class="works-item__title">Саша Мальцев</h3>
+              <blockquote class="works-item__blockquote">
+                Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?
+              </blockquote>
+            </div>
+            <ul class="works-item__parameter-list">
+              <li class="works-item__parameter-item  works-item__parameter-item--haircut">Стрижка</li>
+            </ul>
           </div>
-          <ul class="works-item__parameter-list">
-            <li class="works-item__parameter-item  works-item__parameter-item--haircut">Стрижка</li>
-          </ul>
-        </div>
-      </li>
-    </ul>
+        </li>
+        <li class="works-item">
+          <div class="works-item__img-wrapper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img class="works-item__img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Пример нашей работы">
+            </picture>
+          </div>
+          <div class="works-item__review">
+            <div class="works-item__review-text">
+              <h3 class="works-item__title">Владимир Иваныч</h3>
+              <blockquote class="works-item__blockquote">
+                К зимнему сезону — готов!
+              </blockquote>
+            </div>
+            <ul class="works-item__parameter-list">
+              <li class="works-item__parameter-item  works-item__parameter-item--shaving">Борода</li>
+              <li class="works-item__parameter-item  works-item__parameter-item--mustache">Усы</li>
+            </ul>
+          </div>
+        </li>
+        <li class="works-item">
+          <div class="works-item__img-wrapper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img class="works-item__img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Пример нашей работы">
+            </picture>
+          </div>
+          <div class="works-item__review">
+            <div class="works-item__review-text">
+              <h3 class="works-item__title">Винстон Синий</h3>
+              <blockquote class="works-item__blockquote">
+                Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!
+              </blockquote>
+            </div>
+            <ul class="works-item__parameter-list">
+              <li class="works-item__parameter-item  works-item__parameter-item--haircut">Стрижка</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
   <section class="price">
-    <h2 class="price__header">Прейскурант</h1>
-    <div class="price__columns">
-      <table class="price__table">
-        <tr>
-          <td class="col-1">1</td>
-          <td class="col-2">Классическая стрижка</td>
-          <td class="col-3">(с мытьём головы)</td>
-          <td class="col-4">1 500 руб.</td>
-        </tr>
-        <tr>
-          <td class="col-1">2</td>
-          <td class="col-2">Современный вариант</td>
-          <td class="col-3">(с мытьём головы)</td>
-          <td class="col-4">1 500 руб.</td>
-        </tr>
-        <tr>
-          <td class="col-1">3</td>
-          <td class="col-2">Индивидуальный подход</td>
-          <td class="col-3">(с мытьём головы)</td>
-          <td class="col-4">2 000 руб.</td>
-        </tr>
-        <tr>
-          <td class="col-1">4</td>
-          <td class="col-2">Бритьё бороды</td>
-          <td class="col-3">(без мытья)</td>
-          <td class="col-4">500 руб.</td>
-        </tr>
-        <tr>
-          <td class="col-1">5</td>
-          <td class="col-2">Бритьё бороды</td>
-          <td class="col-3">(с мытьём головы)</td>
-          <td class="col-4">1 000 руб.</td>
-        </tr>
-      </table>
-      <p class="price__discount">С 10:00 до 14:00 скидка 20%</p>
+    <div class="price__wrapper">
+      <h2 class="price__header">Прейскурант</h1>
+      <div class="price__columns">
+        <table class="price__table">
+          <tr>
+            <td class="col-1">1</td>
+            <td class="col-2">Классическая стрижка</td>
+            <td class="col-3">(с мытьём головы)</td>
+            <td class="col-4">1 500 руб.</td>
+          </tr>
+          <tr>
+            <td class="col-1">2</td>
+            <td class="col-2">Современный вариант</td>
+            <td class="col-3">(с мытьём головы)</td>
+            <td class="col-4">1 500 руб.</td>
+          </tr>
+          <tr>
+            <td class="col-1">3</td>
+            <td class="col-2">Индивидуальный подход</td>
+            <td class="col-3">(с мытьём головы)</td>
+            <td class="col-4">2 000 руб.</td>
+          </tr>
+          <tr>
+            <td class="col-1">4</td>
+            <td class="col-2">Бритьё бороды</td>
+            <td class="col-3">(без мытья)</td>
+            <td class="col-4">500 руб.</td>
+          </tr>
+          <tr>
+            <td class="col-1">5</td>
+            <td class="col-2">Бритьё бороды</td>
+            <td class="col-3">(с мытьём головы)</td>
+            <td class="col-4">1 000 руб.</td>
+          </tr>
+        </table>
+        <p class="price__discount">С 10:00 до 14:00 скидка 20%</p>
+      </div>
     </div>
   </section>
   <footer class="page-footer">
