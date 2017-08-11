@@ -77,12 +77,6 @@ img {
     bottom: 73px;
   }
 }
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .page-header__logo {
-    background-image: url("../img/bg-header@2x.jpg");
-    background-size: 1338px auto;
-  }
-}
 @media (min-width: 1200px) {
   .page-header {
     display: -ms-flexbox;
@@ -2890,7 +2884,7 @@ img {
   .works::before {
     content: "";
     position: absolute;
-    top: -42px;
+    top: -41px;
     right: 0;
     left: 0;
     height: 42px;
